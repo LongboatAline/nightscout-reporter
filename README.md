@@ -4,3 +4,16 @@ A web app based on AngularDart to create PDF documents from nightscout data.
 
 It uses the api from cgm-remote-monitor to access the nightscout data and 
 creates some PDFs for handing out to diabetes doctors or coaches.  
+
+## Local Installation
+There may be better procedures, but lacking any knowledge of dart or angular, this is how I proceeded:
+
+Nightscout Reporter needs dart, on MacOS this can be installed from Homebrew.
+After installing dart, I continued from the nightscout=reporter directory:
+* `pub get`
+* `pub global activate webdev`
+* `webdev build`    
+* `pub upgrade`
+*  now point the browser at the local starting file located at build/index.html
+
+For some strange reason, Chromium works well on the remote nightscout-reporter site, but not on the local file.
