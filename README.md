@@ -14,6 +14,6 @@ After installing dart, I continued from the nightscout=reporter directory:
 * `pub global activate webdev`
 * `webdev build`    
 * `pub upgrade`
-*  now point the browser at the local starting file located at build/index.html
+*  now point the browser at the local starting file located at `build/index.html`
 
 For some strange reason, Chromium works well on the remote nightscout-reporter site, but not on the local file.
