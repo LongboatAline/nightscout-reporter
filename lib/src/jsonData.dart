@@ -1022,7 +1022,7 @@ class DayData
     int midCount = 0;
     for (EntryData entry in entries)
     {
-      if (entry.gluc != 0)
+      if (entry.gluc > 39) // cutoff
       {
         entryCount++;
         if (entry.gluc < basalData.targetLow)lowCount++;
@@ -1196,6 +1196,7 @@ class ListData
       {
         days.last.entries.add(entry);
         if (glucData != null)
+        if (entry.gluc > 39) // cutoff
         {
           double gluc = entry.gluc;
           if (gluc < glucData.targetLow)lowCount++;

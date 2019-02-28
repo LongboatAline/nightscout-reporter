@@ -391,9 +391,9 @@ class PrintDailyGraphic extends BasePrint
     {
       double x = glucX(entry.time);
       double y = glucY(entry.gluc);
-      if (entry.gluc < 0)
+      if (entry.gluc < 39) // was < 0
       {
-        if (last != null && last.gluc >= 0)
+        if (last != null && last.gluc >= 39) //was 0
         {
           graphGlucCvs.add(glucLine(points));
           points = [];
